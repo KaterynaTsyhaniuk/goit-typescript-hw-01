@@ -3,6 +3,9 @@ import { person } from "./basic/2";
 import { action, element } from "./basic/3";
 import { calc, showMessage } from "./basic/4";
 import { DayOfWeek, isWeekend } from "./basic/5";
+import { mango, poly } from "./basic/6";
+import { page1, page2 } from "./basic/7";
+import { merged } from "./generics/3";
 import "./style.css";
 
 console.log(age);
@@ -16,3 +19,8 @@ console.log(action);
 showMessage("hello world");
 console.log(calc(10, 10));
 console.log(isWeekend(DayOfWeek.Monday));
+console.log(mango);
+console.log(poly);
+console.log(page1);
+console.log(page2);
+console.log(merged.name);
