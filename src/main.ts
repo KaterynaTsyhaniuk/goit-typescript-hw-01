@@ -6,6 +6,8 @@ import { DayOfWeek, isWeekend } from "./basic/5";
 import { mango, poly } from "./basic/6";
 import { page1, page2 } from "./basic/7";
 import { merged } from "./generics/3";
+import { RoleDescription } from "./generics/5";
+import { formParams } from "./generics/6";
 import "./style.css";
 
 console.log(age);
@@ -24,3 +26,5 @@ console.log(poly);
 console.log(page1);
 console.log(page2);
 console.log(merged.name);
+console.log(formParams);
+console.log(RoleDescription.admin);
