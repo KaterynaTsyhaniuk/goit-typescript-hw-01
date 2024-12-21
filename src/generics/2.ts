@@ -5,14 +5,14 @@ type AllType = {
   weight: number;
 };
 
-function compare(
-  top: AllType,
-  bottom: AllType
-): Pick<AllType, "name" | "position" | "color" | "weight"> {
+function compare<T extends keyof AllType>(
+  top: Pick<AllType, T>,
+  bottom: Pick<AllType, Exclude<keyof AllType, T>>
+): AllType {
   return {
-    name: top.name,
-    color: top.color,
-    position: bottom.position,
-    weight: bottom.weight,
+    name: (top as AllType).name || (bottom as AllType).name,
+    color: (top as AllType).color || (bottom as AllType).color,
+    position: (top as AllType).position ?? (bottom as AllType).position,
+    weight: (top as AllType).weight ?? (bottom as AllType).weight,
   };
 }

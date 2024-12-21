@@ -1,6 +1,6 @@
 import { age, callback, empty, toggle, username } from "./basic/1";
 import { person } from "./basic/2";
-import { action, element } from "./basic/3";
+import { action, elementMix } from "./basic/3";
 import { calc, showMessage } from "./basic/4";
 import { DayOfWeek, isWeekend } from "./basic/5";
 import { mango, poly } from "./basic/6";
@@ -17,7 +17,7 @@ console.log(toggle);
 console.log(empty);
 console.log(callback);
 console.log(person);
-console.log(element);
+console.log(elementMix);
 console.log(action);
 showMessage("hello world");
 console.log(calc(10, 10));

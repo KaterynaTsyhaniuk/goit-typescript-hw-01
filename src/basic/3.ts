@@ -1,4 +1,4 @@
-export let element: "ten" | 10;
+export let elementMix: string | number;
 
 type EnableOrDisable = "enable" | "disable";
 export let action: EnableOrDisable;
